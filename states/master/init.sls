@@ -46,7 +46,7 @@ config_salt_auth:
 restart_salt_master:
   service.running:
     - name: salt-master
-    - enabled: True
+    - enable: True
     - restart: True
     - watch:
       - file: /etc/salt/master.d/file_roots.conf
@@ -58,7 +58,7 @@ restart_salt_master:
 restart_salt_api:
   service.running:
     - name: salt-api
-    - enabled: True
+    - enable: True
     - restart: True
     - watch:
       - file: /etc/salt/master.d/rest_api.conf
