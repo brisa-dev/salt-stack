@@ -5,4 +5,3 @@ base:
     - ntp
     - pkgs
     - pip_packages
-    - teste_pillar
